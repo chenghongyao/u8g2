@@ -8,6 +8,7 @@ add_library(u8g2
         "u8g2_hvline.c"
         "u8g2_font.c"
         "u8g2_buffer.c"
+        "u8g2_fonts.c"
 
         "u8g2_box.c"
         "u8g2_circle.c"
@@ -43,7 +44,3 @@ target_include_directories(u8g2 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 add_library(u8g2_ls013b7dh03 OBJECT "u8x8_d_ls013b7dh03.c" )
 target_link_libraries(u8g2_ls013b7dh03 PUBLIC u8g2)
 add_library(u8g2::ls013b7dh03 ALIAS u8g2_ls013b7dh03)
-
-add_library(u8g2_fonts OBJECT "u8g2_fonts.c" )
-target_link_libraries(u8g2_fonts PUBLIC u8g2)
-add_library(u8g2::fonts ALIAS u8g2_fonts)
