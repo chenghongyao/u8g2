@@ -8,7 +8,7 @@ add_executable(app.elf main.c)
 target_link_libraries(app.elf
     PRIVATE
     u8g2::ls013b7dh03
-    u8g2::fonts)
+    )
 ```
 
 其他库说明请参照[官方](https://github.com/olikraus/u8g2)仓库。
